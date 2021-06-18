@@ -43,3 +43,16 @@ for (let x = 0; x < squadreDiCalcio.length; x++) {
 }
 
 console.log(squadra);
+
+for (let i = 0; i < squadreDiCalcio.length; i++) {
+    const {nome, puntiFatti, falliSubiti} = squadreDiCalcio[i];
+    document.getElementsByClassName("table")[0].innerHTML += `
+    <ul>
+        <li>${nome}</li>
+        <li>${puntiFatti}</li>
+        <li>${falliSubiti}</li>
+    </ul>
+    `
+}
+
+

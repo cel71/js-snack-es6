@@ -5,8 +5,25 @@
     padding: 0;
 }
 
-.tabella ul {
-    list-style: none;
+.table {
+    margin: 20px;
+}
+
+.table ul {
     display: flex;
-    
+    list-style: none;
+}
+
+.table ul:first-child {
+    background-color: turquoise;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table ul li {
+    border: 1px solid black;
+    flex-basis: 33.3%;
+    text-align: center;
+    padding: 10px;
 }
