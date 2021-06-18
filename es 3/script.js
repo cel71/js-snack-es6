@@ -36,7 +36,7 @@ let moreFalliSubiti = 0;
 
 for (let x = 0; x < squadreDiCalcio.length; x++) {
     const {falliSubiti} = squadreDiCalcio[x];
-    if(falliSubiti > moreFalliSubiti) {
+    if (falliSubiti > moreFalliSubiti) {
         squadra = squadreDiCalcio[x];
         moreFalliSubiti = falliSubiti;
     }
