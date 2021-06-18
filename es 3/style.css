@@ -21,9 +21,9 @@
     font-weight: bold;
 }
 
-.table ul:nth-child(4) {
+/* .table ul:nth-child(4) {
     background-color: yellow;
-}
+} */
 
 .table ul li {
     border: 1px solid black;
