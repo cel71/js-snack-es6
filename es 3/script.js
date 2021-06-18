@@ -54,5 +54,3 @@ for (let i = 0; i < squadreDiCalcio.length; i++) {
     </ul>
     `
 }
-
-
