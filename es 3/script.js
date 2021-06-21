@@ -17,17 +17,17 @@ const squadreDiCalcio = [
     {
         nome: "Juve",
         puntiFatti: 45,
-        falliSubiti: 2,
+        falliSubiti: 12,
     },
     {
         nome: "Roma",
         puntiFatti: 65,
-        falliSubiti: 8,
+        falliSubiti: 6,
     },
     {
         nome: "Lazio",
         puntiFatti: 12,
-        falliSubiti: 3,
+        falliSubiti: 10,
     },
 ];
 
@@ -44,16 +44,17 @@ for (let x = 0; x < squadreDiCalcio.length; x++) {
 
 console.log(squadra);
 
-// for (let i = 0; i < squadreDiCalcio.length; i++) {
-//     const {nome, puntiFatti, falliSubiti} = squadreDiCalcio[i];
-//     document.getElementsByClassName("table")[0].innerHTML += `
-//     <ul>
-//         <li>${nome}</li>
-//         <li>${puntiFatti}</li>
-//         <li>${falliSubiti}</li>
-//     </ul>
-//     `
-// }
-
-let element = document.querySelector(".table2");
-element.style.backgroundColor = "yellow";
+for (let i = 0; i < squadreDiCalcio.length; i++) {
+    const {nome, puntiFatti, falliSubiti} = squadreDiCalcio[i];
+    let nuovaSquadra = "";
+    if (squadreDiCalcio[i] === squadra) {
+        nuovaSquadra = "yellow";
+    }
+    document.querySelector(".table").innerHTML += `
+    <ul class= "${nuovaSquadra}">
+        <li>${nome}</li>
+        <li>${puntiFatti}</li>
+        <li>${falliSubiti}</li>
+    </ul>
+    `
+}
